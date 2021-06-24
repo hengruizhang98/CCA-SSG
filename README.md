@@ -50,12 +50,12 @@ python main.py --dataname physics --epochs 100 --lambd 1e-3 --dfr 0.5 --der 0.5 
 ```
 
 ## Reference
-If find our paper and code useful for your research, please cite the following article:
+If our paper and code are useful for your research, please cite the following article:
 ```
 @article{cca-ssg,
-      title={From Canonical Correlation Analysis to Self-supervised Graph Neural Networks}, 
-      author={Hengrui Zhang and Qitian Wu and Junchi Yan and David Wipf and Philip S. Yu},
-      journal   = {arXiv preprint arXiv:2106.12484},
-      year      = {2021}
+      title   = {From Canonical Correlation Analysis to Self-supervised Graph Neural Networks}, 
+      author  = {Hengrui Zhang and Qitian Wu and Junchi Yan and David Wipf and Philip S. Yu},
+      journal = {arXiv preprint arXiv:2106.12484},
+      year    = {2021}
 }
 ```
