@@ -1,5 +1,5 @@
 #  From Canonical Correlation Analysis to Self-supervised Graph Neural Networks
-Official implementation of CCA-SSG (From Canonical Correlation Analysis to Self-supervised Graph Neural Networks).
+Code for CCA-SSG model proposed in the paper [From Canonical Correlation Analysis to Self-supervised Graph Neural Networks](https://arxiv.org/abs/2106.12484).
 
 ## Dependencies
 
@@ -24,10 +24,10 @@ Co-occurence Networks: 'Amazon-Computer', 'Amazon-Photo', 'Coauthor-CS' and 'Coa
 | Coauthor-CS      | 18,333  | 327,576 | 15        | 6,805      |
 | Coauthor-Physics | 34,493  | 991,848 | 5         | 8,451      |
 
-## Instructions
-To reproduce the results reported in the paper, use the following commands: 
+## Usage
+To run the codes, use the following commands:
 ```python
-# Cora 
+# Cora
 python main.py --dataname cora --epochs 50 --lambd 1e-3 --dfr 0.1 --der 0.4 --lr2 1e-2 --wd2 1e-4
 
 # Citeseer
@@ -47,4 +47,15 @@ python main.py --dataname cs --epochs 50 --lambd 1e-3 --dfr 0.2 --lr2 5e-3 --wd2
 
 # Coauthor-Physics
 python main.py --dataname physics --epochs 100 --lambd 1e-3 --dfr 0.5 --der 0.5 --lr2 5e-3 --wd2 1e-4
+```
+
+## Reference
+If find our paper and code useful for your research, please cite the following article:
+```
+@article{cca-ssg,
+      title={From Canonical Correlation Analysis to Self-supervised Graph Neural Networks}, 
+      author={Hengrui Zhang and Qitian Wu and Junchi Yan and David Wipf and Philip S. Yu},
+      journal   = {arXiv preprint arXiv:2106.12484},
+      year      = {2021}
+}
 ```
