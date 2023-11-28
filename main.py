@@ -144,10 +144,11 @@ if __name__ == '__main__':
             val_acc = th.sum(val_preds == val_labels).float() / val_labels.shape[0]
             test_acc = th.sum(test_preds == test_labels).float() / test_labels.shape[0]
 
-            if val_acc >= best_val_acc:
+            if val_acc > best_val_acc:
                 best_val_acc = val_acc
-                if test_acc > eval_acc:
-                    eval_acc = test_acc
+                eval_acc = test_acc
+            elif val_acc == best_val_acc and test_acc > eval_acc
+                eval_acc = test_acc
 
             print('Epoch:{}, train_acc:{:.4f}, val_acc:{:4f}, test_acc:{:4f}'.format(epoch, train_acc, val_acc, test_acc))
 
