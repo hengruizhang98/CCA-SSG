@@ -147,8 +147,6 @@ if __name__ == '__main__':
             if val_acc > best_val_acc:
                 best_val_acc = val_acc
                 eval_acc = test_acc
-            elif val_acc == best_val_acc and test_acc > eval_acc
-                eval_acc = test_acc
 
             print('Epoch:{}, train_acc:{:.4f}, val_acc:{:4f}, test_acc:{:4f}'.format(epoch, train_acc, val_acc, test_acc))
 
